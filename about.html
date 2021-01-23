@@ -1,0 +1,437 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>About</title>
+<meta name="generator" content="WYSIWYG Web Builder 16 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/awesome.css" rel="stylesheet">
+<link href="css/about.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="skrollr.min.js"></script>
+<script src="wwb16.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#wb_CardService1').addClass('visibility-hidden');
+   $('#wb_CardService2').addClass('visibility-hidden');
+   $('#wb_CardService3').addClass('visibility-hidden');
+   $('#wb_CardService4').addClass('visibility-hidden');
+   $("a[href*='#home']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_home').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#facts']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_facts').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollfacts()
+   {
+      var $obj = $("#wb_facts");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollfacts();
+   $(window).scroll(function(event)
+   {
+      onScrollfacts();
+   });
+   $("a[href*='#factsCards']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_factsCards').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#services']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_services').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollservices()
+   {
+      var $obj = $("#wb_services");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollservices();
+   $(window).scroll(function(event)
+   {
+      onScrollservices();
+   });
+   $("a[href*='#serivcesCards']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_serivcesCards').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#contactUs']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_contactUs').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollcontactUs()
+   {
+      var $obj = $("#wb_contactUs");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollcontactUs();
+   $(window).scroll(function(event)
+   {
+      onScrollcontactUs();
+   });
+   function skrollrInit()
+   {
+      skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
+   }
+   skrollrInit();
+   function onScrollBookmark1()
+   {
+      var $obj = $("#wb_Bookmark1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_CardService1', 'animate-fade-in-up', 0, 1000);
+      }
+   }
+   onScrollBookmark1();
+   $(window).scroll(function(event)
+   {
+      onScrollBookmark1();
+   });
+   function onScrollBookmark2()
+   {
+      var $obj = $("#wb_Bookmark2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_CardService2', 'animate-fade-in-up', 0, 1000);
+      }
+   }
+   onScrollBookmark2();
+   $(window).scroll(function(event)
+   {
+      onScrollBookmark2();
+   });
+   function onScrollBookmark3()
+   {
+      var $obj = $("#wb_Bookmark3");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_CardService3', 'animate-fade-in-up', 0, 1000);
+      }
+   }
+   onScrollBookmark3();
+   $(window).scroll(function(event)
+   {
+      onScrollBookmark3();
+   });
+   function onScrollBookmark4()
+   {
+      var $obj = $("#wb_Bookmark4");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_CardService4', 'animate-fade-in-up', 0, 1000);
+      }
+   }
+   onScrollBookmark4();
+   $(window).scroll(function(event)
+   {
+      onScrollBookmark4();
+   });
+});
+</script>
+</head>
+<body>
+<div id="wb_home">
+<div id="home">
+<div class="col-1">
+<div id="wb_homeText">
+<p style="font-size:15px;line-height:16.5px;color:#FFFFFF;"><span style="font-size:32px;line-height:36px;font-weight:bold;">About Us</span></p>
+<p style="font-size:16px;line-height:18px;color:#FFFFFF;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_facts">
+<div id="facts">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_reviewsHeading3" style="display:inline-block;width:100%;z-index:1;">
+<h1 id="reviewsHeading3">Experience in technology</h1>
+</div>
+<div id="wb_reviewsText2">
+<p style="color:#FFFFFF;"><span style="background-color:#000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_factsCards">
+<div id="factsCards">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Card1" style="display:flex;width:100%;text-align:center;z-index:3;" data--250-bottom="transform: scale(1.0,1.0);" data-333-bottom="transform: scale(0.5,0.5);">
+   <div id="Card1-card-body">
+      <div id="Card1-card-item0"><svg class="svg-icon" viewBox="0 0 300 257" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <g transform="scale(1)">
+   <path d="M150 69 L150 144 C150 146, 149 147, 148 148 C147 149, 146 150, 144 150 L91 150 C89 150, 88 149, 87 148 C86 147, 85 146, 85 144 L85 133 C85 132, 86 131, 87 130 C88 129, 89 128, 91 128 L128 128 L128 69 C128 68, 129 66, 130 65 C131 64, 132 64, 133 64 L144 64 C146 64, 147 64, 148 65 C149 66, 150 68, 150 69 Z M207 174 C215 160, 219 145, 219 128 C219 112, 215 96, 207 82 C199 68, 188 57, 174 49 C160 41, 145 37, 128 37 C112 37, 96 41, 82 49 C68 57, 57 68, 49 82 C41 96, 37 112, 37 128 C37 145, 41 160, 49 174 C57 188, 68 199, 82 207 C96 215, 112 219, 128 219 C145 219, 160 215, 174 207 C188 199, 199 188, 207 174 Z M239 64 C251 83, 257 105, 257 128 C257 151, 251 173, 239 193 C228 212, 212 228, 193 239 C173 251, 151 257, 128 257 C105 257, 83 251, 64 239 C44 228, 28 212, 17 193 C5 173, 0 151, 0 128 C0 105, 5 83, 17 64 C28 44, 44 28, 64 17 C83 5, 105 0, 128 0 C151 0, 173 5, 193 17 C212 28, 228 44, 239 64"/>
+   </g>
+</svg>
+</div>
+      <div id="Card1-card-item1">About</div>
+      <div id="Card1-card-item2">Do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+      <div id="Card1-card-item3">Learn more ></div>
+   </div>
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Card2" style="display:flex;width:100%;text-align:center;z-index:4;" data--250-bottom="transform: scale(1.0,1.0);" data-333-bottom="transform: scale(0.5,0.5);">
+   <div id="Card2-card-body">
+      <div id="Card2-card-item0"><svg class="svg-icon" viewBox="0 0 300 295" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <g transform="scale(1)">
+   <path d="M138 177 C146 169, 150 159, 150 147 C150 135, 146 125, 138 117 C129 108, 119 104, 108 104 C96 104, 86 108, 77 117 C69 125, 65 135, 65 147 C65 159, 69 169, 77 177 C86 186, 96 190, 108 190 C119 190, 129 186, 138 177 Z M279 233 C279 227, 277 222, 273 218 C268 214, 263 211, 258 211 C252 211, 247 214, 242 218 C238 222, 236 227, 236 233 C236 239, 238 244, 242 248 C247 252, 252 254, 258 254 C263 254, 269 252, 273 248 C277 244, 279 239, 279 233 Z M279 61 C279 56, 277 51, 273 46 C268 42, 263 40, 258 40 C252 40, 247 42, 242 46 C238 51, 236 56, 236 61 C236 67, 238 72, 242 77 C247 81, 252 83, 258 83 C263 83, 269 81, 273 77 C277 72, 279 67, 279 61 Z M215 132 L215 163 C215 164, 214 165, 214 166 C213 167, 212 168, 211 168 L185 172 C184 176, 182 180, 180 185 C183 190, 188 196, 195 204 C195 205, 196 206, 196 207 C196 209, 195 210, 195 210 C192 214, 187 219, 181 225 C174 232, 170 235, 168 235 C166 235, 165 235, 164 234 L145 219 C141 221, 136 223, 132 224 C131 236, 129 245, 128 250 C127 253, 126 254, 123 254 L92 254 C91 254, 90 254, 89 253 C88 252, 87 251, 87 250 L83 224 C79 223, 75 222, 71 219 L51 234 C50 235, 49 235, 47 235 C46 235, 45 235, 44 234 C28 219, 20 210, 20 207 C20 206, 20 205, 21 204 C22 202, 24 200, 28 195 C31 191, 34 187, 36 185 C33 180, 31 175, 30 171 L4 167 C3 167, 2 167, 2 166 C1 165, 0 164, 0 162 L0 131 C0 130, 1 129, 2 128 C2 127, 3 126, 4 126 L30 122 C31 118, 33 114, 36 110 C32 104, 27 98, 21 90 C20 89, 19 88, 19 87 C19 86, 20 85, 21 84 C23 80, 28 75, 34 69 C41 62, 45 59, 47 59 C49 59, 50 59, 51 60 L70 75 C74 73, 78 71, 83 70 C84 58, 86 49, 87 44 C88 41, 89 40, 92 40 L123 40 C124 40, 125 40, 126 41 C127 42, 128 43, 128 44 L132 70 C136 71, 140 73, 145 75 L164 60 C165 59, 166 59, 168 59 C169 59, 170 59, 171 60 C187 75, 195 84, 195 87 C195 88, 195 89, 194 90 C193 92, 190 95, 187 99 C184 104, 181 107, 180 109 C182 115, 184 119, 185 123 L211 127 C212 127, 213 128, 214 129 C214 130, 215 131, 215 132 Z M322 221 L322 245 C322 246, 314 248, 297 250 C296 253, 294 256, 292 258 C298 271, 300 279, 300 282 C300 282, 300 282, 300 283 C286 291, 279 295, 279 295 C278 295, 276 292, 271 287 C267 282, 264 278, 263 275 C260 276, 259 276, 258 276 C256 276, 255 276, 253 275 C251 278, 248 282, 244 287 C240 292, 237 295, 236 295 C236 295, 229 291, 215 283 C215 282, 215 282, 215 282 C215 279, 218 271, 223 258 C221 256, 220 253, 218 250 C202 248, 193 246, 193 245 L193 221 C193 219, 202 218, 218 216 C220 213, 221 210, 223 207 C218 195, 215 187, 215 184 C215 184, 215 183, 215 183 C216 183, 218 182, 221 180 C225 178, 228 176, 231 174 C234 172, 236 171, 236 171 C237 171, 240 174, 244 179 C248 184, 251 188, 253 190 C255 190, 256 190, 258 190 C259 190, 260 190, 263 190 C268 182, 273 176, 278 172 L279 171 C279 171, 286 175, 300 183 C300 183, 300 184, 300 184 C300 187, 298 195, 292 207 C294 210, 295 213, 297 216 C314 218, 322 219, 322 221 Z M322 50 L322 73 C322 75, 314 77, 297 78 C296 81, 294 84, 292 87 C298 100, 300 107, 300 110 C300 111, 300 111, 300 111 C286 119, 279 123, 279 123 C278 123, 276 121, 271 115 C267 110, 264 106, 263 104 C260 104, 259 104, 258 104 C256 104, 255 104, 253 104 C251 106, 248 110, 244 115 C240 121, 237 123, 236 123 C236 123, 229 119, 215 111 C215 111, 215 111, 215 110 C215 107, 218 100, 223 87 C221 84, 220 81, 218 78 C202 77, 193 75, 193 73 L193 50 C193 48, 202 46, 218 45 C220 41, 221 38, 223 36 C218 23, 215 15, 215 13 C215 12, 215 12, 215 12 C216 11, 218 10, 221 8 C225 6, 228 4, 231 2 C234 1, 236 0, 236 0 C237 0, 240 2, 244 8 C248 13, 251 17, 253 19 C255 19, 256 19, 258 19 C259 19, 260 19, 263 19 C268 11, 273 5, 278 0 L279 0 C279 0, 286 4, 300 12 C300 12, 300 12, 300 13 C300 15, 298 23, 292 36 C294 38, 295 41, 297 45 C314 46, 322 48, 322 50"/>
+   </g>
+</svg>
+</div>
+      <div id="Card2-card-item1">Services</div>
+      <div id="Card2-card-item2">Do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+      <div id="Card2-card-item3">Learn more ></div>
+   </div>
+</div>
+</div>
+</div>
+<div class="col-3">
+<div class="col-3-padding">
+<div id="wb_Card3" style="display:flex;width:100%;text-align:center;z-index:5;" data--250-bottom="transform: scale(1.0,1.0);" data-333-bottom="transform: scale(0.5,0.5);">
+   <div id="Card3-card-body">
+      <div id="Card3-card-item0"><svg class="svg-icon" viewBox="0 0 300 257" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <g transform="scale(1)">
+   <path d="M214 101 C214 98, 213 95, 211 93 L196 78 C194 76, 192 75, 189 75 C186 75, 183 76, 181 78 L113 146 L75 109 C73 106, 70 105, 67 105 C65 105, 62 106, 60 109 L45 124 C43 126, 42 128, 42 131 C42 134, 43 137, 45 139 L105 199 C107 202, 110 203, 113 203 C116 203, 118 202, 121 199 L211 109 C213 107, 214 104, 214 101 Z M239 64 C251 83, 257 105, 257 128 C257 151, 251 173, 239 193 C228 212, 212 228, 193 239 C173 251, 151 257, 128 257 C105 257, 83 251, 64 239 C44 228, 28 212, 17 193 C5 173, 0 151, 0 128 C0 105, 5 83, 17 64 C28 44, 44 28, 64 17 C83 5, 105 0, 128 0 C151 0, 173 5, 193 17 C212 28, 228 44, 239 64"/>
+   </g>
+</svg>
+</div>
+      <div id="Card3-card-item1">Portfolio</div>
+      <div id="Card3-card-item2">Do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+      <div id="Card3-card-item3">Learn more ></div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_services">
+<div id="services">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Heading2" style="display:inline-block;width:100%;z-index:6;">
+<h1 id="Heading2">We Always Delivers When It Matters</h1>
+</div>
+<div id="wb_Text2">
+<p style="color:#FFFFFF;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_serivcesCards">
+<div id="serivcesCards">
+<div class="row">
+<div class="col-1">
+<div id="wb_CardService1" style="display:flex;width:100%;text-align:center;z-index:8;">
+   <div id="CardService1-card-body">
+      <div id="CardService1-card-item0"><svg class="svg-icon" viewBox="0 0 300 257" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <g transform="scale(1)">
+   <path d="M196 114 L125 185 C123 187, 120 188, 117 188 C114 188, 112 187, 110 185 L61 136 C59 134, 57 131, 57 128 C57 125, 59 123, 61 121 L78 104 C80 101, 82 100, 85 100 C88 100, 91 101, 93 104 L117 128 L163 82 C166 80, 168 79, 171 79 C174 79, 176 80, 178 82 L196 99 C198 101, 199 104, 199 107 C199 110, 198 112, 196 114 Z M207 174 C215 160, 219 145, 219 128 C219 112, 215 96, 207 82 C199 68, 188 57, 174 49 C160 41, 145 37, 128 37 C112 37, 96 41, 82 49 C68 57, 57 68, 49 82 C41 96, 37 112, 37 128 C37 145, 41 160, 49 174 C57 188, 68 199, 82 207 C96 215, 112 219, 128 219 C145 219, 160 215, 174 207 C188 199, 199 188, 207 174 Z M239 64 C251 83, 257 105, 257 128 C257 151, 251 173, 239 193 C228 212, 212 228, 193 239 C173 251, 151 257, 128 257 C105 257, 83 251, 64 239 C44 228, 28 212, 17 193 C5 173, 0 151, 0 128 C0 105, 5 83, 17 64 C28 44, 44 28, 64 17 C83 5, 105 0, 128 0 C151 0, 173 5, 193 17 C212 28, 228 44, 239 64"/>
+   </g>
+</svg>
+</div>
+      <div id="CardService1-card-item1">Service 1</div>
+      <div id="CardService1-card-item2">Do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+   </div>
+</div>
+<div id="wb_Bookmark1" style="display:inline-block;width:100%;z-index:9;">
+<a id="Bookmark1" style="visibility:hidden;">&nbsp;</a>
+
+</div>
+</div>
+<div class="col-2">
+<div id="wb_CardService2" style="display:flex;width:100%;text-align:center;z-index:10;">
+   <div id="CardService2-card-body">
+      <div id="CardService2-card-item0"><svg class="svg-icon" viewBox="0 0 300 214" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <g transform="scale(1)">
+   <path d="M70 171 C63 171, 56 169, 51 164 C46 158, 43 152, 43 145 L43 27 C43 19, 46 13, 51 8 C56 3, 63 0, 70 0 L252 0 C260 0, 266 3, 271 8 C276 13, 279 19, 279 27 L279 145 C279 152, 276 158, 271 164 C266 169, 260 171, 252 171 Z M65 27 L65 145 C65 146, 65 147, 66 148 C67 149, 69 150, 70 150 L252 150 C254 150, 255 149, 256 148 C257 147, 258 146, 258 145 L258 27 C258 25, 257 24, 256 23 C255 22, 254 21, 252 21 L70 21 C69 21, 67 22, 66 23 C65 24, 65 25, 65 27 Z M295 182 L322 182 L322 198 C322 203, 319 206, 314 210 C309 213, 302 214, 295 214 L27 214 C20 214, 14 213, 8 210 C3 206, 0 203, 0 198 L0 182 L27 182Z  M175 198 C176 198, 177 197, 177 196 C177 194, 176 193, 175 193 L148 193 C146 193, 145 194, 145 196 C145 197, 146 198, 148 198"/>
+   </g>
+</svg>
+</div>
+      <div id="CardService2-card-item1">Service 2</div>
+      <div id="CardService2-card-item2">Do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+   </div>
+</div>
+<div id="wb_Bookmark2" style="display:inline-block;width:100%;z-index:11;">
+<a id="Bookmark2" style="visibility:hidden;">&nbsp;</a>
+
+</div>
+</div>
+<div class="col-3">
+<div id="wb_CardService3" style="display:flex;width:100%;text-align:center;z-index:12;">
+   <div id="CardService3-card-body">
+      <div id="CardService3-card-item0"><svg class="svg-icon" viewBox="0 0 300 236" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <g transform="scale(1)">
+   <path d="M58 165 C62 161, 64 156, 64 150 C64 144, 62 139, 58 135 C53 131, 48 129, 42 129 C36 129, 31 131, 27 135 C23 139, 21 144, 21 150 C21 156, 23 161, 27 165 C31 169, 36 171, 42 171 C48 171, 53 169, 58 165 Z M90 90 C94 86, 96 81, 96 75 C96 69, 94 64, 90 60 C86 56, 80 54, 75 54 C69 54, 64 56, 59 60 C55 64, 53 69, 53 75 C53 81, 55 86, 59 90 C64 94, 69 96, 75 96 C80 96, 86 94, 90 90 Z M168 156 L185 92 C185 89, 185 86, 183 83 C182 81, 180 79, 177 79 C174 78, 171 78, 169 80 C166 81, 165 83, 164 86 L147 150 C140 151, 134 153, 129 157 C124 162, 120 167, 118 174 C116 183, 117 191, 122 198 C126 206, 133 211, 141 213 C150 216, 158 214, 166 210 C173 205, 178 199, 181 190 C182 184, 182 177, 180 171 C177 164, 173 159, 168 156 Z M272 165 C276 161, 278 156, 278 150 C278 144, 276 139, 272 135 C268 131, 263 129, 257 129 C251 129, 246 131, 242 135 C237 139, 235 144, 235 150 C235 156, 237 161, 242 165 C246 169, 251 171, 257 171 C263 171, 268 169, 272 165 Z M165 58 C169 54, 171 49, 171 43 C171 37, 169 32, 165 28 C161 24, 155 21, 150 21 C144 21, 139 24, 134 28 C130 32, 128 37, 128 43 C128 49, 130 54, 134 58 C139 62, 144 64, 150 64 C155 64, 161 62, 165 58 Z M240 90 C244 86, 246 81, 246 75 C246 69, 244 64, 240 60 C236 56, 230 54, 225 54 C219 54, 214 56, 209 60 C205 64, 203 69, 203 75 C203 81, 205 86, 209 90 C214 94, 219 96, 225 96 C230 96, 236 94, 240 90 Z M300 150 C300 179, 292 206, 276 231 C274 234, 271 236, 267 236 L32 236 C28 236, 25 234, 23 231 C7 206, 0 179, 0 150 C0 130, 4 110, 11 92 C19 73, 30 57, 43 44 C57 30, 73 20, 91 12 C110 4, 129 0, 150 0 C170 0, 189 4, 208 12 C226 20, 242 30, 256 44 C269 57, 280 73, 288 92 C296 110, 300 130, 300 150"/>
+   </g>
+</svg>
+</div>
+      <div id="CardService3-card-item1">Service 3</div>
+      <div id="CardService3-card-item2">Do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+   </div>
+</div>
+<div id="wb_Bookmark3" style="display:inline-block;width:100%;z-index:13;">
+<a id="Bookmark3" style="visibility:hidden;">&nbsp;</a>
+
+</div>
+</div>
+<div class="col-4">
+<div id="wb_CardService4" style="display:flex;width:100%;text-align:center;z-index:14;">
+   <div id="CardService4-card-body">
+      <div id="CardService4-card-item0"><svg class="svg-icon" viewBox="0 0 300 257" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <g transform="scale(1)">
+   <path d="M300 187 L300 241 C300 245, 298 249, 295 252 C292 255, 288 257, 283 257 L230 257 C225 257, 222 255, 219 252 C215 249, 214 245, 214 241 L214 187 C214 183, 215 179, 219 176 C222 173, 225 171, 230 171 L246 171 L246 139 L160 139 L160 171 L176 171 C181 171, 185 173, 188 176 C191 179, 192 183, 192 187 L192 241 C192 245, 191 249, 188 252 C185 255, 181 257, 176 257 L123 257 C118 257, 115 255, 111 252 C108 249, 107 245, 107 241 L107 187 C107 183, 108 179, 111 176 C115 173, 118 171, 123 171 L139 171 L139 139 L53 139 L53 171 L69 171 C74 171, 77 173, 81 176 C84 179, 85 183, 85 187 L85 241 C85 245, 84 249, 81 252 C77 255, 74 257, 69 257 L16 257 C11 257, 7 255, 4 252 C1 249, 0 245, 0 241 L0 187 C0 183, 1 179, 4 176 C7 173, 11 171, 16 171 L32 171 L32 139 C32 133, 34 128, 38 124 C42 120, 47 117, 53 117 L139 117 L139 85 L123 85 C118 85, 115 84, 111 81 C108 77, 107 74, 107 69 L107 16 C107 11, 108 7, 111 4 C115 1, 118 0, 123 0 L176 0 C181 0, 185 1, 188 4 C191 7, 192 11, 192 16 L192 69 C192 74, 191 77, 188 81 C185 84, 181 85, 176 85 L160 85 L160 117 L246 117 C252 117, 257 120, 261 124 C265 128, 267 133, 267 139 L267 171 L283 171 C288 171, 292 173, 295 176 C298 179, 300 183, 300 187"/>
+   </g>
+</svg>
+</div>
+      <div id="CardService4-card-item1">Service 4</div>
+      <div id="CardService4-card-item2">Do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+   </div>
+</div>
+<div id="wb_Bookmark4" style="display:inline-block;width:100%;z-index:15;">
+<a id="Bookmark4" style="visibility:hidden;">&nbsp;</a>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_header">
+<div id="header">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+<div id="wb_headerMenu" style="display:inline-block;width:424px;height:48px;z-index:16;">
+<ul id="headerMenu" role="menubar" class="nav">
+<li class="nav-item firstmain"><a role="menuitem" class="nav-link headerMenu-effect" href="./FisHbone-IPTV.html#home" target="_self">Home</a>
+</li>
+<li class="nav-item"><a role="menuitem" class="nav-link headerMenu-effect" href="./services.html" target="_self">Services</a>
+</li>
+<li class="nav-item"><a role="menuitem" class="nav-link headerMenu-effect" href="./about.html" target="_self">About</a>
+</li>
+<li class="nav-item"><a role="menuitem" class="nav-link headerMenu-effect" href="./product.html" target="_self">Product</a>
+</li>
+<li class="nav-item"><a role="menuitem" class="nav-link headerMenu-effect" href="#contactUs" target="_self">Contact</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_contactUs">
+<div id="contactUs">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Heading1" style="display:inline-block;width:100%;z-index:17;">
+<h1 id="Heading1">CONTACT US</h1>
+</div>
+<div id="wb_Text1">
+<p style="color:#FFFFFF;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_contactUsForm">
+<div id="contactUsForm">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+<label for="EditboxName" id="Label1" style="display:block;width:100%;line-height:33px;z-index:19;">Name</label>
+<input type="text" id="EditboxName" style="display:block;width: 100%;height:41px;z-index:20;" name="name" value="" spellcheck="false">
+<label for="EditboxEmail" id="Label2" style="display:block;width:100%;line-height:33px;z-index:21;">Email</label>
+<input type="text" id="EditboxEmail" style="display:block;width: 100%;height:42px;z-index:22;" name="email" value="" spellcheck="false">
+<label for="ComboboxOption" id="Label3" style="display:block;width:100%;line-height:33px;z-index:23;">Select an option</label>
+<select name="option" size="1" id="ComboboxOption" style="display:block;width: 100%;height:42px;z-index:24;" autocomplete="off">
+<option selected value="option-1">Option 1</option>
+<option value="option-2">Option 2</option>
+<option value="option-3">Option 3</option>
+</select>
+<label for="TextAreaMessage" id="Label4" style="display:block;width:100%;line-height:33px;z-index:25;">Message</label>
+<textarea name="message" id="TextAreaMessage" style="display:block;width: 100%;;height:97px;z-index:26;" rows="3" cols="65" autocomplete="off" spellcheck="false"></textarea>
+<div id="wb_CheckboxUpdates" style="display:inline-block;width:34px;height:23px;z-index:27;">
+<input type="checkbox" id="CheckboxUpdates" name="Checkbox1" value="on" checked style="display:inline-block;"><label for="CheckboxUpdates"></label>
+</div>
+<label for="CheckboxUpdates" id="Label5" style="display:inline-block;width:330px;line-height:33px;z-index:28;">Please send product updates and offers via email.</label>
+<hr id="Line1" style="display:block;width: 100%;z-index:29;">
+<input type="submit" id="Button1" name="" value="Submit" style="display:inline-block;width:140px;height:42px;z-index:30;">
+</div>
+<div class="col-3">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_footer">
+<div id="footer">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text16">
+<p style="color:#FFFFFF;">Copyright © 2019 WYSIWYG Web Builder.&nbsp; All Rights Reserved</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="StickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:42;">
+<div id="wb_up-arrow" style="position:absolute;left:9px;top:8px;width:24px;height:24px;text-align:center;z-index:32;">
+<a href="./FisHbone-IPTV.html#home"><div id="up-arrow"><i class="fa fa-angle-up"></i></div></a></div>
+</div>
+</body>
+</html>
